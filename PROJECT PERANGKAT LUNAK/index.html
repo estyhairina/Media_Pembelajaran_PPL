@@ -128,8 +128,14 @@
         signUpBtn.addEventListener("click", () => {
             signInForm.classList.add("hide");
             signUpForm.classList.add("show");
+            signInForm.classList.remove("show");
         });
-        // menit 33
+        
+        signInBtn.addEventListener("click", () => {
+            signInForm.classList.remove("hide");
+            signUpForm.classList.remove("show");
+            signInForm.classList.add("show");
+        });
     </script>
 </body>
 </html>
