@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
+
 <body>
     <div class="form-container sign-in-form">
         <div class="form-box sign-in-box">
@@ -25,7 +26,7 @@
                 <div class="forgot-link">
                     <a href="">Forgot Password</a>
                 </div>
-                <input class="submit-btn" type="submit" name="Login">
+                <input class="submit-btn" type="submit" value="Login">
             </form>
             <div class="login-options">
                 <p class="text">Or, login with...</p>
@@ -49,12 +50,11 @@
     <div class="form-container sign-up-form">
         <div class="imgBox sign-up-imgBox">
             <div class="sliding-link">
-                <p>Already a member</p>
+                <p>Don't have an account?</p>
                 <span class="sign-in-btn">Sign in</span>
             </div>
-            <img src="./img/sign-in.png" alt="">
+            <img src="./img/sign-up.png" alt="">
         </div>
-
         <div class="form-box sign-up-box">
             <h2>Sign up</h2>
             <div class="login-options">
@@ -92,15 +92,15 @@
         // input fields focus effects
         const textInputs = document.querySelectorAll("input");
 
-        textInputs.forEach(textInputs => {
-            textInputs.addEventListener("focus", () => {
-                let parent = textInputs.parentNode;
-                parent.classlist.add("active");
+        textInputs.forEach(textInput => {
+            textInput.addEventListener("focus", () => {
+                let parent = textInput.parentNode;
+                parent.classList.add("active");
             });
 
-            textInputs.addEventListener("blur", () => {
-                let parent = textInputs.parentNode;
-                parent.classlist.remove("active");
+            textInput.addEventListener("blur", () => {
+                let parent = textInput.parentNode;
+                parent.classList.remove("active");
             });
         });
 
@@ -136,6 +136,7 @@
             signUpForm.classList.remove("show");
             signInForm.classList.add("show");
         });
+        
     </script>
 </body>
 </html>
