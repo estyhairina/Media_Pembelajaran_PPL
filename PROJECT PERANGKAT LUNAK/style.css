@@ -17,6 +17,7 @@ body{
 }
 
 .form-container{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,10 +51,9 @@ body{
 .form-box .field.active{
     border-bottom: 2px solid #0065ff;
     transition: 0.3s ease;
-
 }
 
-.form-box .field  input{
+.form-box .field input{
     border: none;
     outline: none;
     background: none;
@@ -83,6 +83,11 @@ body{
 .eye-btn{
     cursor: pointer;
     color: #0065;
+    transition: 0.3s ease;
+}
+
+.eye-btn i:hover{
+    color: #0065ff;
     transition: 0.3s ease;
 }
 
@@ -130,18 +135,20 @@ body{
 }
 
 .other -logins a{
-    border: 1px solid 32px;
+    border: 1px solid #ccc;
     padding: 11px 32px;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 5px;
+    transition: border 0.3 ease;
 }
 
 .other -logins a:hover{
     border: 1px solid #0065ff;
 }
+
 
 .other-logins a img{
     width: 20px;
@@ -152,122 +159,122 @@ body{
     max-width: 270px;
 }
 
+
 .sliding-link{
-   display: flex;
-    font-size: 0.8em;
-    margin-bottom: 25px;
-}
-
-.sliding-link span{
-    color: #0065ff;
-    font-weight:  600;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-.imgBox{
-    z-index: 888;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #fff;
-    box-shadow: 0 5px 25px rgb(0, 0, 0/15%);
-    height: 400px;
-    padding: 15px 35px;
-} 
-
-.sign-in-form{
-    display: none;
-}
-   
-.sign-in-imgBox{
-    border-radius: 0 5px 5px 0;
-}
-
-.sign-up-imgBox{
-    border-radius: 5px 0 0 5px;
-}
-
-.sign-in-form.hide .sign-in-box{
+     font-size: 0.8em;
+     margin-bottom: 25px;
+ }
+ 
+ .sliding-link span{
+     color: #0065ff;
+     font-weight:  600;
+     margin-left: 5px;
+     cursor: pointer;
+ }
+ 
+ .imgBox{
+     z-index: 888;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: #fff;
+     box-shadow: 0 5px 25px rgb(0, 0, 0/15%);
+     height: 400px;
+     padding: 15px 35px;
+ } 
+ 
+ .sign-in-form{
+     display: none;
+ }
+    
+ .sign-in-imgBox{
+     border-radius: 0 5px 5px 0;
+ }
+ 
+ .sign-up-imgBox{
+     border-radius: 5px 0 0 5px;
+ }
+ 
+ .sign-in-form.hide .sign-in-box{
+     transform: translateX(100%);
+     visibility: hidden;
+ }
+ 
+ .sign-up-form.hide .sign-in-imgBox{
+     transform: translateX(-100%);
+     visibility: hidden;
+ }
+ 
+ .sign-in-form.show .sign-in-box,
+ .sign-up-form.show .sign-in-imgBox{
+     transform: translateX(0);
+     visibility: visible;
+     transition: 0.5s ease;
+ }  
+ 
+ .sign-up-form .sign-up-imgBox{
     transform: translateX(100%);
     visibility: hidden;
-}
-
-.sign-up-form.hide .sign-in-imgBox{
-    transform: translateX(-100%);
-    visibility: hidden;
-}
-
-.sign-in-form.show .sign-in-box,
-.sign-up-form.show .sign-in-imgBox{
-    transform: translateX(0);
-    visibility: visible;
-    transition: 0.5s ease;
-}
-   
-    
-
-.sign-up-form .sign-up-imgBox{
-   transform: translateX(100%);
-   visibility: hidden;
-}  
-
-.sign-up-form .sign-up-box{
-    transform: translateX(-100%);
-    visibility: hidden;
-}
-
-.sign-in-form.show .sign-up-imgBox,
-.sign-up-form.show .sign-up-box{
-    transform: translateX(0);
-    visibility: visible;  
-    transition: 0.5s ease;
-
-}
- @media screen and (max-width: 735px){
-   .form-container {
-    flex-direction: column;
-    top: 0;
-    overflow: hidden;
-    padding: 30px;
-   } 
-
-    .form-box{
-    box-shadow: none;
-    padding: 0; 
-    }
-
-    .imgBox img{
-    max-width: 45%;
-    min-width: 180px;
-    }
-
-    .imgBox {
-    box-shadow: none;
-    width: 100%;
-    height: auto;
-    padding: 35px 35px 15px;
-    }
-
-    .sign-up-form{
-    flex-direction: column-reverse;
-    }
-}
-
-@media screen and (max-width:450px){
-    .form-container{
-        font-size: 0.9rem;
-    }
-
-    .form-box{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:325px){
-    .other-logins a{
-        padding: 9px 25px;
-        margin: 0 3 px;
-    }
-}
+ }  
+ 
+ .sign-up-form .sign-up-box{
+     transform: translateX(-100%);
+     visibility: hidden;
+ }
+ 
+ .sign-in-form.show .sign-up-imgBox,
+ .sign-up-form.show .sign-up-box{
+     transform: translateX(0);
+     visibility: visible;  
+     transition: 0.5s ease;
+ 
+ }
+ 
+  @media screen and (max-width: 735px){
+    .form-container {
+     flex-direction: column;
+     top: 0;
+     overflow: hidden;
+     padding: 30px;
+    } 
+ 
+     .form-box{
+     box-shadow: none;
+     padding: 0; 
+     }
+ 
+     .imgBox img{
+     max-width: 45%;
+     min-width: 180px;
+     }
+ 
+     .imgBox {
+     box-shadow: none;
+     width: 100%;
+     height: auto;
+     padding: 35px 35px 15px;
+     }
+ 
+     .sign-up-form{
+     display: none;
+     }
+ }
+ 
+ @media screen and (max-width:450px){
+     .form-container{
+         font-size: 0.9rem;
+     }
+ 
+     .form-box{
+         width: 100%;
+     }
+ }
+ 
+ @media screen and (max-width:325px){
+     .other-logins a{
+         padding: 9px 25px;
+         margin: 0 3 px;
+     }
+ }
