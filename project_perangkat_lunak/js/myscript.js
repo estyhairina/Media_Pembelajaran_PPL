@@ -34,8 +34,8 @@ signUpbtn.addEventListener('click', (e) =>{
   // var name = document.getElementById("name").value;
   // var Email = document.getElementById("email-sign-up").value;
   // var pwSignUp = document.getElementById("pw-sign-up").value;
-  
-  createUserWithEmailAndPassword(auth, Email, pwSignUp)
+
+  createUserWithEmailAndPassword(auth, Email, pwConfir)
   .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
@@ -54,26 +54,4 @@ signUpbtn.addEventListener('click', (e) =>{
     // ..
     alert(errorMessage);
   });
-
-
-  // createUserWithEmailAndPassword(auth, Email, pwSignUp)
-  //   .then((userCredential) => {
-  //     // Signed in
-  //     const user = userCredential.user;
-  //     alert("User Telah ditambahkan");
-
-  //     set(ref(database, "users/" + user.uid)), {
-  //       name : name,
-  //       Email : Email,
-  //       pwSignUp : pwSignUp
-
-  //     });
-  //   })
-
-  //   .catch((error) => {
-  //     const errorCode = error.code;
-  //     const errorMessage = error.message;
-
-  //     alert(errorMessage);
-  //   });
 });
