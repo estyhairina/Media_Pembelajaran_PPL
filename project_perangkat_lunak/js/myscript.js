@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
@@ -21,13 +21,21 @@ const database = getDatabase(app);
 const auth = getAuth();
 
 signUp.addEventListener('click', (e) => {
-  var Email = document.getElementById('emailSignUp').value;
-  var Password = document.getElementById('pwSignUp').value;
+  var username = document.getElementById('username').value;
+  var EmailSignUp = document.getElementById('emailSignUp').value;
+  var PasswordSignUp = document.getElementById('pwSignUp').value;
 
-  createUserWithEmailAndPassword(auth, Email, Password)
+  createUserWithEmailAndPassword(auth, EmailSignUp, PasswordSignUp)
   .then((userCredential) => {
-  // Signed in
+  // Signed up
   const user = userCredential.user;
+
+  set (ref(database, 'users/' + user.uid), {
+    username: username,
+    EmailSignUp: EmailSignUp,
+    PasswordSignUp: PasswordSignUp
+
+  })
   alert("Berhasil");
   // ...
   })
@@ -36,5 +44,34 @@ signUp.addEventListener('click', (e) => {
   const errorMessage = error.message;
   alert(errorMessage);
   // ..
+  });
+});
+
+// Sign In
+signIn.addEventListener('click', (e) => {
+  var EmailLogin = document.getElementById('emailSignIn').value;
+  var PasswordLogin = document.getElementById('pwSignIn').value;
+  // var EmailSignUp = document.getElementById('emailSignUp').value;
+  // var PasswordSignUp = document.getElementById('pwSignUp').value;
+
+  signInWithEmailAndPassword(auth, EmailLogin, PasswordLogin)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+
+    const dt = new Date();
+    // location.href = "http://127.0.0.1:5500/project_perangkat_lunak/dashboard.html";
+    update(ref(database, 'users/' + user.uid), {
+      last_login: dt,
+  
+    })
+
+    alert("Berhasil Login");
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
   });
 });
