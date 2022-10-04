@@ -18,8 +18,44 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-const auth = getAuth();
+const auth = getAuth(app);
 
+
+// Sign In
+signIn.addEventListener('click', (e) => {
+  var EmailLogin = document.getElementById('emailSignIn');
+
+  var PasswordLogin = document.getElementById('pwSignIn');
+  console.log = (PasswordLogin);
+  const value = PasswordLogin.value
+
+  // console.log(EmailLogin.value);
+  // console.log(PasswordLogin.value);
+  // var EmailSignUp = document.getElementById('emailSignUp').value;
+  // var PasswordSignUp = document.getElementById('pwSignUp').value;
+
+  signInWithEmailAndPassword(auth, EmailLogin, PasswordLogin)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+
+    const dt = new Date();
+    // location.href = "http://127.0.0.1:5500/project_perangkat_lunak/dashboard.html";
+    update(ref(database, 'users/' + user.uid), {
+      last_login: dt,
+    })
+
+    alert("Berhasil Login");
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
+});
+
+// Sign Up
 signUp.addEventListener('click', (e) => {
   var username = document.getElementById('username').value;
   var EmailSignUp = document.getElementById('emailSignUp').value;
@@ -44,34 +80,5 @@ signUp.addEventListener('click', (e) => {
   const errorMessage = error.message;
   alert(errorMessage);
   // ..
-  });
-});
-
-// Sign In
-signIn.addEventListener('click', (e) => {
-  var EmailLogin = document.getElementById('emailSignIn').value;
-  var PasswordLogin = document.getElementById('pwSignIn').value;
-  // var EmailSignUp = document.getElementById('emailSignUp').value;
-  // var PasswordSignUp = document.getElementById('pwSignUp').value;
-
-  signInWithEmailAndPassword(auth, EmailLogin, PasswordLogin)
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
-
-    const dt = new Date();
-    // location.href = "http://127.0.0.1:5500/project_perangkat_lunak/dashboard.html";
-    update(ref(database, 'users/' + user.uid), {
-      last_login: dt,
-  
-    })
-
-    alert("Berhasil Login");
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    alert(errorMessage);
   });
 });
