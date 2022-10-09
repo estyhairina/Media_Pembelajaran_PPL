@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styledashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Admin</title>
 </head>
-<body>
-    <!-- Sign In Form -->
-    <div class="form-container sign-in-form">
-        <div class="form-box sign-in-box">
-            <h2>Login</h2>
-            <form action="">
-                <div class="field">
-                    <i class="uil uil-at"></i>
-                    <input type="email" placeholder="Email ID" id="EmailId" id="emailSignIn"/>
-                </div>
-                <div class="field">
-                    <i class="uil uil-lock-alt"></i>
-                    <input class="password-input" type="password" placeholder="Password" id="pwSignIn"/>
-                    <div class="eye-btn"> <i class="uil uil-eye-slash"></i> </div>
-                </div>
-                <div class="forgot-link">
-                    <a href="">Forgot Password</a>
-                </div>
-                <input class="submit-btn" type="button" value="Login" id="signIn">
-            </form>
-            <div class="login-options">
-                <p class="text">Or, login with...</p>
-                <div class="other-logins">
-                    <a href=""> <img src="./img/google.png" alt=""></a>
-                    <a href=""> <img src="./img/facebook.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="imgBox sign-in-imgBox">
-            <div class="sliding-link">
-                <p>Don't have an account?</p>
-                <span class="sign-up-btn">Sign up</span>
-            </div>
-            <img src="./img/sign-in.png" alt="">
-        </div>
-    </div>
 
-    <script type="module" src="./js/signin.js"></script>
+<body>
+<div id="header">
+	
+        <img src="./img/pembelahan_sel.jpg" class="imgheader">
+	
+</div>
+
+<div id="footer">
+	<nav>
+		<ul>
+			<a href="PROYEK/Materi.html"><li>
+				<div class="ef">
+					<div id="lingkaran1">
+                    <br><b>MATERI</b>
+					<img src="./img/materi.svg" width="120" height="120"/>
+					</div>
+				</div>
+			</li></a>
+			
+			<a href="PROYEK/KIKD.html"><li>
+				<div class="ef">
+				<div id="lingkaran2">
+                <b>KI & KD</b>
+				<img src="./img/ki_kd.svg" width="120" height="120" style="margin-top:10px"/>
+				</div>
+			</div>
+			</li></a>
+			
+			<a href="PROYEK/Informasi.html"><li>
+				<div class="ef">
+				<div id="lingkaran3">
+                <b>INFORMASI</b>
+				<img src="./img/informasi.svg" width="120" height="120"style="margin-top:10px"/>
+				</div>
+			</div>
+			</li></a>
+		</ul>
+	</nav>
+</div>
+
+</body>
+</html>
 </body>
 </html>
