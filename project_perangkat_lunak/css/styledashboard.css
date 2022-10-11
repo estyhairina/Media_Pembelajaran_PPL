@@ -1,0 +1,244 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(135, 206, 235, 0.5);
+}
+
+#footer
+{
+background	: rgba(135, 206, 235, 0.5);
+font-size	: 1.5em;
+text-align	: center;
+padding-top	: 1px;
+height		: 310px;
+font-family: 'Berkshire Swash', cursive;
+
+
+}
+#lingkaran1{
+width		: 200px;
+height		: 200px;
+background	: rgba(123, 103, 238, 0.8);
+border-radius : 20%;
+margin-left	: 200px;
+float		:left;
+color		: black;
+margin-top  : 35px;
+}
+
+#lingkaran2{
+width		: 200px;
+height		: 200px;
+background	: rgba(123, 103, 238, 0.8);
+border-radius : 20%;
+margin-left	: 450px;
+float		:center;
+color		: black;
+margin-top  : 35px;
+}
+
+#lingkaran3{
+width		: 200px;
+height		: 200px;
+background	: rgba(123, 103, 238, 0.8);
+border-radius : 20%;
+margin-right: -800px;
+float		: right;
+color		: black;
+margin-top  : 35px;
+}
+
+nav{
+width		: 50%;
+height		: 30px;
+}
+
+nav ul li{
+width		: 15%;
+height		: 30px;
+float		: left;
+list-style	: none;
+text-align	: center;
+
+}
+
+.ef{
+    -webkit-transition:all .6s cubic-bezier(.165,.84,.44,1);
+    transition:all .6s cubic-bezier(.165,.84,.44,1)
+}
+.ef::after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    -webkit-transition:all .6s cubic-bezier(.165,.84,.44,1);
+    transition:all .6s cubic-bezier(.165,.84,.44,1)}
+.ef:hover{
+    -webkit-transform:scale(1.1,1.1);
+    transform:scale(1.1,1.1)}
+.ef:hover::after{opacity:1}
+
+@media screen and (max-width:1000px) {
+    body{
+        overflow: auto;
+    }
+    #header {
+      float: none;
+      position: static;
+      margin: auto;
+      width: fit-content;
+      
+    }
+    #footer
+    {
+    height: 800px;
+
+    }
+    #lingkaran1{
+        width		: 200px;
+        height		: 200px;
+        margin-left: 100px;
+        
+        }
+        
+    #lingkaran2{
+        width		: 200px;
+        height		: 200px;
+        margin-top: 280px;
+        margin-left: 70px;
+        }
+        
+    #lingkaran3{
+        width		: 200px;
+        height		: 200px;
+        margin-top: 530px;
+        margin-right: -205px;
+        }
+    .imgheader{
+            width: 100%;
+            height: 50%;
+        }
+  }
+   */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    background-image: url("/project_perangkat_lunak/img/pembelahan_sel.jpg");
+    background-size: cover;
+}
+
+b{
+    font-size	: 3em;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+}
+
+nav{
+    width: 100%;
+    height: 250px;
+}
+
+.icon{
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.tombol{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #90B77D;
+    margin: 10px;
+    margin-top: 30px;
+    border-radius: 15%;
+    box-sizing: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    color: #f1f1f1;
+}
+
+.tombol img{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+}
+
+.tombol:hover img{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        overflow: auto;
+    }
+
+    #header {
+        float: none;
+        position: static;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #footer{
+        height: 800px;
+    }
+
+    .imgheader{
+        width: 100%;
+        height: 50%;
+
+    }
+}
+
+/* .tombol::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110%;
+    top: 90%;
+    transform: rotate(45deg);
+    background: #90B77D;
+}
+
+.tombol:hover::before{
+    left: -10%;
+    top: -10%;
+    animation: aaa 0.7s 1;
+}  */
+
+/* @keyframes aaa {
+    0%{
+    left: -110%;
+    top: 90%;
+    }
+    50%{
+    left: -10%;
+    top: -30%;   
+    }
+    100%{
+        left: -10%;
+        top: -10%;   
+        }
+} */
