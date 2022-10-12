@@ -1,21 +1,18 @@
 body
 {
-    background-color:rgba(135, 206, 235, 0.5);
-    font-family: 'Berkshire Swash', cursive;
+    background-image: url("/project_perangkat_lunak/img/pembelahan_sel.jpg");
+    background-size: cover;
+    font-family: 'Poppins', sans-serif; 
 }
-#header
-{
 
-float	: center;
-text-align: center;
-margin-left: 50px;
-
-
+#header{
+    float	: center;
+    text-align: center;
+    margin-left: 50px;
 }
 
 
-#nav
-{
+#nav{
     width		: 100%;
     height		: 30px;
     padding-bottom: 10px;
@@ -23,27 +20,36 @@ margin-left: 50px;
 }
 
 
-#content
-{
-    background	: rgb(224, 255, 255, 0.8);
+#content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background	: rgba(255, 255, 255, 0.7);
     float		: center;
-    width		: 78%;
-    height		: 450px;
+    width		: 90%;
+    height		: 500px;
     font-size	: 1em;
     text-align	: justify;
     margin-top	: 50px;
-    border		: 10px solid rgba(123, 103, 238, 0.8);
-    margin-left	: 160px;
+    border		: 3px solid #42855B;
+    border-radius: 2%;
     overflow: auto;
 }
 
-.tabel1{
-	text-align: justify-all;
-	padding: 10px;
-    margin-left: 350px;
+img{
+    margin-left: 140px; 
+    margin-bottom: -20px;
+    display: block;
 }
+
+.tabel1{
+	justify-items: center;
+    text-align: justify-all;
+	padding: 10px;
+}
+
 .pilih button{
-    background-color:#031f4b;
+    background-color:#90B77D;
     border:none;
     outline:none;
     cursor:pointer;
@@ -62,11 +68,11 @@ margin-left: 50px;
         margin-left: 120px;
     }
 .pilih button:hover{
-    background-color:#187bcd;
+    background-color:#51B5B7;
     color:#fff}
     
 .pilih .tmblAktif{
-    background-color:#a8c2fb;
+    background-color:#55C9EE;
     color:#000}
     
 .pilihan{

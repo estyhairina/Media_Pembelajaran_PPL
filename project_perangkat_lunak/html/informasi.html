@@ -2,142 +2,130 @@
 <html>
 <head>
 	<title>INFORMASI</title>
-	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/project_perangkat_lunak/css/styleinformasi.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-	<script src="../javascript/KIKDjs.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="#"></script>
 
 </head>
 
 <body>
+<div class="home">
+    <a style="text-decoration: none;" href="../index.html">
+        <img src="/project_perangkat_lunak/img/home.svg" width="80" height="50"/> 
+    </a>
+</div>
 
-<a style="text-decoration: none;"href="../Index.html">
-	<img src="../image/home.png" width="80" height="50" style="margin-left: 140px; margin-bottom: -20px"/> </a>
-
-	<div id="nav">
-		<div class="pilih"><ul>
-			<li><button class="pilihan tmblAktif" onclick="bukaIsi(event, 'isi1')">Informasi Aplikasi</button><br><br></li>
-        	<li><button class="pilihan" onclick="bukaIsi(event, 'isi2')">Petunjuk Aplikasi</button><br><br></li>
-        	<li><button class="pilihan" onclick="bukaIsi(event, 'isi3')">Daftar Pustaka</button></li>
-		
-		</ul></div>
-	</div>
+<div id="nav">
+	<div class="pilih"><ul>
+		<li><button class="pilihan tmblAktif" onclick="bukaIsi(event, 'isi1')">Informasi Aplikasi</button><br><br></li>
+       	<li><button class="pilihan" onclick="bukaIsi(event, 'isi2')">Daftar Pustaka</button></li>	
+	</ul></div>
+</div>
 
 <div id="content">
 	
 	<div class="isian isiAktif" id="isi1">
-		<center><h2>Informasi Media</h2></center>
+		<center><h3>Informasi Media</h3></center>
 		<p style="margin-left: 60px; margin-right: 60px;">Media pembelajaran ini dibuat untuk memenuhi tugas Mata Kuliah Proyek 
             Perangkat Lunak dengan judul : Pengembangan Media Pembelajaran Interaktif Berbasis Web Pada 
             Materi Pembelahan Sel untuk Siswa SMA Kelas XII"</p>
 		<hr style="margin-right: 60px; margin-left: 60px;">
 
-		<center><h2>Informasi Penulis</h2></center>
+		<center><h3>Informasi Penulis</h3></center>
         <div>
             <div> 
-                <table class="tabel1">
-                    <tr>
-                        <td>Nama</td>
-                        <td width="50"><center>:</center></td>
-                        <td>Esty Hairina</td>
-                    </tr>
-                    <tr>
-                        <td>NIM</td>
-                        <td width="20"><center>:</center></td>
-                        <td>1910131320007</td>
-                    </tr>
-                    <tr>
-                        <td>Program Studi</td>
-                        <td width="20"><center>:</center></td>
-                        <td>Pendidikan Komputer</td>
-                    </tr>
-                    <tr>
-                        <td>Fakultas</td>
-                        <td width="20"><center>:</center></td>
-                        <td>Keguruan dan Ilmu Pendidikan</td>
-                    </tr>
-                    <tr>
-                        <td>Instansi</td>
-                        <td width="20"><center>:</center></td>
-                        <td>Universitas Lambung Mangkurat</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td width="20"><center>:</center></td>
-                        <td>1910131320007@mhs.ulm.ac.id</td>
-                    </tr>
-                    
-                </table>
-
-                <table class="tabel1">
-                    <tr>
-                        <td>Nama</td>
-                        <td width="50"><center>:</center></td>
-                        <td>Naily Arifah</td>
-                    </tr>
-                    <tr>
-                        <td>NIM</td>
-                        <td width="20"><center>:</center></td>
-                        <td>1910131320006</td>
-                    </tr>
-                    <tr>
-                        <td>Program Studi</td>
-                        <td width="20"><center>:</center></td>
-                        <td>Pendidikan Komputer</td>
-                    </tr>
-                    <tr>
-                        <td>Fakultas</td>
-                        <td width="20"><center>:</center></td>
-                        <td>Keguruan dan Ilmu Pendidikan</td>
-                    </tr>
-                    <tr>
-                        <td>Instansi</td>
-                        <td width="20"><center>:</center></td>
-                        <td>Universitas Lambung Mangkurat</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td width="20"><center>:</center></td>
-                        <td>1910131320006@mhs.ulm.ac.id</td>
-                    </tr>
-                    
-                </table>
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <table class="tabel1">
+                                    <tr>
+                                        <td>Nama</td>
+                                        <td width="50"><center>:</center></td>
+                                        <td>Naily Arifah</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NIM</td>
+                                        <td width="20"><center>:</center></td>
+                                        <td>1910131320006</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Program Studi</td>
+                                        <td width="20"><center>:</center></td>
+                                        <td>Pendidikan Komputer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fakultas</td>
+                                        <td width="20"><center>:</center></td>
+                                        <td>Keguruan dan Ilmu Pendidikan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Instansi</td>
+                                        <td width="20"><center>:</center></td>
+                                        <td>Universitas Lambung Mangkurat</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td width="20"><center>:</center></td>
+                                        <td>1910131320006@mhs.ulm.ac.id</td>
+                                    </tr>
+                                </table>
+                            </p>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <p class="card-text">
+                            <table class="tabel1">
+                                <tr>
+                                    <td>Nama</td>
+                                    <td width="50"><center>:</center></td>
+                                    <td>Esty Hairina</td>
+                                </tr>
+                                <tr>
+                                    <td>NIM</td>
+                                    <td width="20"><center>:</center></td>
+                                    <td>1910131320007</td>
+                                </tr>
+                                <tr>
+                                    <td>Program Studi</td>
+                                    <td width="20"><center>:</center></td>
+                                    <td>Pendidikan Komputer</td>
+                                </tr>
+                                <tr>
+                                    <td>Fakultas</td>
+                                    <td width="20"><center>:</center></td>
+                                    <td>Keguruan dan Ilmu Pendidikan</td>
+                                </tr>
+                                <tr>
+                                    <td>Instansi</td>
+                                    <td width="20"><center>:</center></td>
+                                    <td>Universitas Lambung Mangkurat</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td width="20"><center>:</center></td>
+                                    <td>1910131320007@mhs.ulm.ac.id</td>
+                                </tr>
+                                
+                            </table>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
             </div>
         </div>
 		
 	</div>
 	
 	<div class="isian" id="isi2">
-		
-		<center><img src="../image/infoapk.PNG" width="900" height="450" /></center>
-		<center><h2>Petunjuk Aplikasi</h2></center>
-		<ol>
-			<li>
-				Menu
-				<p>Jika kita mengklik icon menu, maka tampilan daftar isi akan hilang dan konten akan tampil secara penuh.</p>
-			</li>
-			<li>
-				Navigasi Daftar Isi
-				<p>Navigasi ini terletak di bagian kiri yang berisi judul tiap subbab pada bab Protista. Pengguna dapat melihat materi mana saja yang diinginkan dengan menekan materi yang dipilih.</p>
-			</li>
-			<li>
-				Beranda
-				<p>Jika pengguna menekan icon home di bagian ini maka pengguna akan di arahkan ke halaman awal.</p>
-			</li>
-			<li>
-				Materi
-				<p>Ini adalah konten yang berisi materi yang dibahas, sesuai dengan materi yang di klik oleh pengguna.</p>
-			</li>
-			<li>
-				Navigasi Halaman
-				<p>Navigasi ini berada di bagian paling bawah. Navigasi ini dapat mempermudah pengguna membaca materi secara terurut dengan berpindah ke halaman sebelum atau selanjutnya.</p>
-			</li>
-		</ol>
-	</div>
-	
-	<div class="isian" id="isi3">
 		<center><h2>Daftar Pustaka</h2></center>
 		<p style="margin-left: 60px; margin-right: 60px;">Sulistyowati, E., Omegawati, W. H., & Hidayat, M. L. (2016). BUKU SISWA BIOLOGI untuk SMA/MA Kelas X. Klaten: PT Intan Pariwara.</p>
 
