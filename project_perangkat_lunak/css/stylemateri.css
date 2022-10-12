@@ -1,0 +1,10 @@
+body
+{
+    background-image: url("/project_perangkat_lunak/img/pembelahan_sel.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+
+}

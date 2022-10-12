@@ -31,8 +31,7 @@ body
     font-size	: 1em;
     text-align	: justify;
     margin-top	: 50px;
-    border		: 3px solid #42855B;
-    border-radius: 2%;
+    border		: 10px solid #42855B;
     overflow: auto;
 }
 
