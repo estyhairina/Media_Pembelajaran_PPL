@@ -5,28 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/project_perangkat_lunak/css/stylemateri.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="/project_perangkat_lunak/js/materi.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>MATERI</title>
 </head>
 <body>
-    <input type="checkbox" name="" id="check">
+    <input type="checkbox" id="check">
     <label for="check">
-        <i class="uil uil-bars" id="btn"></i>
-        <i class="uil uil-bars" id="cancel"></i>
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
     </label>
     <div class="sidebar">
-        <header>DAFTAR ISI</header>
+        <header><b>DAFTAR ISI</b></header>
+
         <ul>
-            <li> <a href="#"><i class="uil uil-apps"></i>a</a></li>
-            <li> <a href="#"><i class="uil uil-apps"></i>b</a></li>
-            <li> <a href="#"><i class="uil uil-apps"></i>c</a></li>
-            <li> <a href="#"><i class="uil uil-apps"></i>d</a></li>
-            <li> <a href="#"><i class="uil uil-apps"></i>e</a></li>
-            <li> <a href="#"><i class="uil uil-apps"></i>f</a></li>
-            <li> <a href="#"><i class="uil uil-apps"></i>g</a></li>
-            <li> <a href="#"><i class="uil uil-apps"></i>h</a></li>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Tujuan Pembelajaran</a></li>
+            <li><a href="#"><i class="fas fa-link"></i>Apersepsi</a></li>
+            <li><a href="#"><i class="fas fa-stream"></i>Gametogenesis</a></li>
+            <li class="dropdown-btn" onclick="ftampil()"><a href="#"><i class="fas fa-calendar-week"></i>Gametogenesis Pada Hewan<i class="arrow down"></i></a></li>
+                    <div class="dropdown-containerr">
+                        <ol type="a">
+                        <a href="#"><li>a. Spermatogenesis</li></a>
+                        <a href="#"><li>b. Oogenesis</li></a>
+                        </ol>
+                    </div>
+
+            <li class="dropdown-btn" onclick="ftampil()"><a href="#"><i class="far fa-question-circle"></i>Gametogenesis Pada Tumbuhan<i class="arrow down"></i></a></li>
+                <div class="dropdown-containerr">
+                    <ol type="a">
+                        <a href="#"><li>a. Mikrosporogenesis</li></a>
+                        <a href="#"><li>b. Makrosporogensis (Megasporogenesis)</li></a>
+                        </ol>
+                </div>
+
+            <li><a href="#"><i class="fas fa-sliders-h"></i>Rangkuman</a></li>
+            <li><a href="#"><i class="far fa-envelope"></i>Evaluasi</a></li>
         </ul>
     </div>
-    <div id="main"> isi </div>
+
+    <div><iframe width="500" height="500" style="background-color:white; padding:5px 0px 0 5px; border:3px solid black; margin:auto; display:block" frameborder="0" src="https://crosswordlabs.com/embed/pembelahan-sel-37"></iframe></div>
+    
 </body>
 </html>

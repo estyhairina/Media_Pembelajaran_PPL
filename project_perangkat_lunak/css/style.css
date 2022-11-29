@@ -67,7 +67,7 @@ footer{
 }
 
 .tombol:hover img{
-    transform: scale(1.3);
+    transform: scale(1.2);
     color: #f1f1f1;
 }
 
