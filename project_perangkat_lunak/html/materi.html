@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/project_perangkat_lunak/css/stylemateri.css">
+    <link rel="stylesheet" href="/project_perangkat_lunak/fontawesome/css/all.css" class="stylesheet">
     <script src="/project_perangkat_lunak/js/materi.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>MATERI</title>
 </head>
 <body>
@@ -15,35 +15,117 @@
       <i class="fas fa-bars" id="btn"></i>
       <i class="fas fa-times" id="cancel"></i>
     </label>
+
     <div class="sidebar">
         <header><b>DAFTAR ISI</b></header>
 
         <ul>
-            <li><a href="#"><i class="fas fa-qrcode"></i>Tujuan Pembelajaran</a></li>
-            <li><a href="#"><i class="fas fa-link"></i>Apersepsi</a></li>
-            <li><a href="#"><i class="fas fa-stream"></i>Gametogenesis</a></li>
-            <li class="dropdown-btn" onclick="ftampil()"><a href="#"><i class="fas fa-calendar-week"></i>Gametogenesis Pada Hewan<i class="arrow down"></i></a></li>
+            <li><a href="#navtujuan"><i class="fa-solid fa-chalkboard-user"></i>Tujuan Pembelajaran</a></li>
+            <li><a href="#navapersepsi"><i class="fa-regular fa-lightbulb"></i>Apersepsi</a></li>
+            <li><a href="#gametogenesis"><i class="fa-brands fa-react"></i></i>Gametogenesis</a></li>
+            <li class="dropdown-btn" onclick="ftampil()"><a href="#ghewan"><i class="fa-solid fa-paw"></i>Gametogenesis Pada Hewan<i class="arrow down"></i></a></li>
                     <div class="dropdown-containerr">
                         <ol type="a">
-                        <a href="#"><li>a. Spermatogenesis</li></a>
-                        <a href="#"><li>b. Oogenesis</li></a>
+                        <li><a href="#spermatogenesis">a. Spermatogenesis</a></li>
+                        <li><a href="#oogenesis">b. Oogenesis</a></li>
                         </ol>
                     </div>
 
-            <li class="dropdown-btn" onclick="ftampil()"><a href="#"><i class="far fa-question-circle"></i>Gametogenesis Pada Tumbuhan<i class="arrow down"></i></a></li>
+            <li class="dropdown-btn" onclick="ftampil()"><a href="#gtumbuhan"><i class="fa-solid fa-seedling"></i>Gametogenesis Pada Tumbuhan<i class="arrow down"></i></a></li>
                 <div class="dropdown-containerr">
                     <ol type="a">
-                        <a href="#"><li>a. Mikrosporogenesis</li></a>
-                        <a href="#"><li>b. Makrosporogensis (Megasporogenesis)</li></a>
+                        <li><a href="#mikrosporogenesis">a. Mikrosporogenesis</a></li>
+                        <li><a href="#makrosporogenesis">b. Makrosporogensis (Megasporogenesis)</a></li>
                         </ol>
                 </div>
 
-            <li><a href="#"><i class="fas fa-sliders-h"></i>Rangkuman</a></li>
-            <li><a href="#"><i class="far fa-envelope"></i>Evaluasi</a></li>
+            <li><a href="#rangkuman"><i class="fa-regular fa-rectangle-list"></i>Rangkuman</a></li>
+            <li><a href="#navtts"><i class="fa-solid fa-puzzle-piece"></i>Evaluasi</a></li>
+            <li><a href="/project_perangkat_lunak/index.html"><i class="fa-solid fa-door-open"></i>Home</a></li>
         </ul>
+            
     </div>
+        <section>
+            <div id="header">
+                
+            </div>
+            
+            <div id="content">
+                <!-- TUJUAN PEMBELAJARAN -->
+                <div class="kliktujuan" id="navtujuan"><a href="#tujuan" onclick="tujuan('tujuan')">Tujuan Pembelajaran<br></a></div>
+                <div class="tujuan" id="tujuan"> Setelah mempelajari topik ini, siswa diharapkan :
+                    <ol type="1">
+                    <li>Menganalisis proses pembentukan gamet (Gametogenesis) sebagai dasar penurunan sifat dari induk kepada keturunan nya.</li>
+                    </ol>
+                </div>
 
-    <div><iframe width="500" height="500" style="background-color:white; padding:5px 0px 0 5px; border:3px solid black; margin:auto; display:block" frameborder="0" src="https://crosswordlabs.com/embed/pembelahan-sel-37"></iframe></div>
+                <!-- APERSEPSI -->
+                <br>
+                <div class="klikapersepsi" id="navapersepsi"><a href="#apersepsi" onclick="apersepsi('apersepsi')"> Apersepsi<br></a></div>
+                <div class="apersepsi" id="apersepsi">
+                    <p>.........................</p>
+                </div>
+		        
+                <!-- MATERI PEMBELAJARAN -->
+                <br>
+                <div class="materi">
+                    <h3 id="gametogenesis" style="text-align: justify;">Gametogenesis</h3>
+                    <p>&emsp;&emsp;Gametogenesis adalah proses pembentukan gamet atau sel kelamin di dalam alat perkembangbiakan. Gametogenesis terjadi pada organisme dewasa, baik pada manusia, hewan, maupun tumbuhan. Gametogenesis pada hewan sama dengan gametogenesis pada manusia.</p>
+                    
+                    <br>
+                    <h3 id="ghewan" style="text-align: justify;">Gametogenesis Pada Hewan</h3>
+                    <p>Gametogenesis adalah perkembangan sel germinal diploid (2n) menjadi kelamin (ovum dan spermatozoa) haploid (n) (oogenesis dan spermatogenesis). Proses pembentukan ovum disebut Oogenesis. Sedangkan Proses pembentukan sepermatozoa disebut spermatogenesis.(Rancaranji 2021)</p>
+                    
+                    <br>
+                    <h3 id="spermatogenesis" style="text-align: justify;">Spermatogenesis</h3>
+                    <p>Spermatogenesis adalah proses dimana sel-sel germinal primer laki-laki mengalami pembelahan dan menghasilkan jumlah sel disebut spermatogonium, yang darinya spermatosit primer berasal. Setiap spermatosit primer membelah menjadi dua spermatosit sekunder, dan masing – masing spermatosit sekunder spermatid menjadi dua atau spermatozoa muda. Ini berkembang menjadi spermatozoa matang, juga dikenal sebagai sel sperma. Oleh karena itu, spermatosit primer menimbulkan dua sel, spermatosit sekunder, dan dua spermatosit sekunder dengan subdivisi mereka menghasilkan empat spermatozoa. Spermatozoa adalah gamet jantan matang dalam banyak organisme bereproduksi secara seksual.</p>
+
+                    <br>
+                    <h3 id="oogenesis" style="text-align: justify;">Oogenesis</h3>
+                    <p>Oogenesis adalah proses pembentukan sel telur.sel induk telur (oogonium) menjadi besar sebelum membelah secara meiosis. Sel ini disebut oosit primer. Berbeda dengan spermatogenesis, sel oosit primer jauh lebih besar karena mengandung komponen sitoplasmik lebih banyak. Dua oosit sekunder (hasil pembelahan meiosis I) berbeda ukuran dan fungsi. Satu oosit sekunder memiliki ukuran yang lebih besar akan melakukan meiosis II dan menghasilkan satu sel telur yang fungsional dan satu badan kutub yang berdegenerasi. Satu sel oosit sekunder lain yang berukuran lebih kecil (badan kutub pertama) juga mengalami degenerasi (mati). Dengan demikian oogenesis menghasilkan empat sel haplod, tetapi hanya satu sel yang fungsional menjadi sel telur dan tiga badan polar yang berdegenerasi. </p>
+
+                    <br>
+                    <h3 id="gtumbuhan" style="text-align: justify;">Gametogenesis pada Tumbuhan</h3>
+                    <p>Mikrosporogenesis dimulai dari sel induk mikrospora yang membelah melalui meiosis I dan meiosis II, serta menghasilkan empat mikrospora yang dinamakan tetrad (karena keempat mikrospora menempel menjadi satu). Masing-masing mikrospora akanber kembang terpisah satu sama lain menjadi butir serbuk sari (polen). Pada tiap serbuk sari, intinya mengadakan pembelahan mitosis menjadi inti vegetatif dan inti generatif. Pada tumbuhan Angiospermae (berbiji tertutup), inti generatif membelah sekali lagi membentuk dua inti generatif setelah terjadi penyerbukan. Gametofit jantan yang lengkap terjadi saat serbuk sari berkecambah, yaitu mengandung satu inti vegetatif dan dua inti generatif. Kedua inti generatif inilah yang siap membuahi sel-sel gamet betina.</p>
+
+                    <br>
+                    <h3 id="mikrosporogenesis" style="text-align: justify;">a. Mikrosporogenesis</h3>
+                    <p>Mikrosporogenesis merupakan proses pembentukan gamet jantan. Terjadi di dalam kepala sari. Di dalam kepala sari, terdapat kantung serbuk sari yang di dalamnya ada berbagai sel-sel induk serbuk sari (mikrospora) yang diploid. Perhatikan gambar di bawah ini. </p>
+                    <ol type="a">
+                        <li>Tahapan pembentukan mikrosporogenesis secara lengkap adalah sebagai berikut: Sel induk mikrospora melakukan pembelahan meiosis I dan menghasilkan sepasang sel haploid. </li>
+                        <li>Sepasang sel haploid membelah meiosis II menghasilkan 4 mikrospora haploid yang berkelompok menjadi satu (tetrad). </li>
+                        <li>Setiap mikrospora mengalami pembelahan kariokinesis sehingga menghasilkan 2 inti haploid. Yaitu inti vegetatif (inti saluran serbuk sari) dan inti generatif. </li>
+                        <li>Inti generatif membelah secara mitosis sehingga membentuk dua inti sperma yang dikenal dengan inti generatif I dan inti generatif II. (Huda 2020).</li>
+                    </ol>
+                    
+
+                    <br>
+                    <h3 id="makrosporogenesis" style="text-align: justify;">b.	Makrosporogenesis (Megasporogenesis)</h3>
+                    <p>Gametogenesis pada alat kelamin betina dinamakan megasporogenesis. Megasporogenesis merupakan proses pembentukan megaspora. Proses megasporogenesis dimulai dari pembelahan meiosis I dan meiosis II sel induk megaspora diploid, menghasilkan empat sel megaspora yang haploid. Pada tumbuhan Angiospermae hanya satu megaspora saja yang fungsional, sedangkan tiga lainnya mengalami degenerasi. Selanjutnya satu sel megaspora yang haploid mengalami tiga kali pembelahan mitosis berturut-turut menghasilkan 8 sel megaspora di dalam gametofit betina. Delapan sel tersebut selanjutnya tersusun menjadi tiga sel antipoda, dua inti kutub, satu sel telur (ovum), dan dua sel sinergid.</p>
+
+                    <br>
+                    <h3 id="rangkuman" style="text-align: justify;">Rangkuman</h3>
+                    <ol>
+                        <li> Gametogenesis adalah proses pembentukan gamet yang mencakup peristiwa pembelahan meiosis I dan meiosis II, diikuti dengan pemasakan sel haploid menjadi sel gamet.</li>
+                        <li> Gametogenesis pada hewan jantan disebut dengan spermatogenesis. Spermatogenesis menghasilkan empat sperma yang haploid. Gametogenesis pada hewan betina disebut oogenesis. Oogenesis menghasilkan satu ovum yang bersifat haploid dan fertil serta tiga badan kutub polar yang steril.</li>
+                        <li> Gametogenesis pada tumbuhan tingkat tinggi terbagi menjadi mikrosporogenesis untuk tumbuhan jantan dan megasporogenesis pada tumbuhan betina. Mikrosporogenesis menghasilkan empat mikrospora yang haploid yang selanjutnya 2 mikrospora berfusi menjadi intivegetatif dan 2 mikrospora menjadi inti generatif 1 dan inti generatif 2. Megasporrogenesis menghasilkan delapan megaspora yang haploid yang selanjutnya menjadi 3 inti antipoda, 2 inti melebur menjadi inti kandung lembaga sekunder, dan 2 inti sinergida, dan 1 inti ovum.</li>
+                    </ol>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="navtts" class="kliktts"><a href="#tts" onclick="tts('tts')"> Teka Teki Silang<br></a></div>
+                <div class="tts" id="tts">
+                    <iframe width="700" height="450" style="background-color:white; padding:5px 0px 0 5px; border:3px solid black; margin:auto; display:block" frameborder="0" src="https://crosswordlabs.com/embed/pembelahan-sel-38"></iframe>
+                </div>
+                
+                
+            </div>
+        </section>
     
 </body>
 </html>

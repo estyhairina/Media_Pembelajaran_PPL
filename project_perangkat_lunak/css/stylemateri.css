@@ -10,6 +10,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#header{  
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 70px;
+    float: center;
+	display: inline-flex;       
+}
+
 .sidebar {
     position: fixed;
     left: 0px;
@@ -63,7 +72,7 @@ label #btn,label #cancel{
 
 label #btn{
     left: 325px;
-    top: 25px;
+    top: 17px;
     font-size: 35px;
     color: white;
     padding: 6px 12px;
@@ -101,43 +110,13 @@ label #cancel{
 }
 
 section{
-    background-image: url(/project_perangkat_lunak/img/pembelahan_sel.jpg) no-repeat;
+    background: url(/project_perangkat_lunak/img/pembelahan_sel.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
     transition: all .5s;
-    margin-left: -250px;
+    margin-left: 375px;
 }
-
-/* .dropdown-btn{
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 60px;
-    font-size: 15px;
-    color: white;
-    padding-left: 20px;
-    background: #90B77D;
-    display: block;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-} */
-
-/* .dropdown-btn:hover a{
-    padding-left: 50px;
-}
-
-.dropdown-btn ul a i{
-    margin-right: 16px;
-}
-    
-.dropdown-btn{
-    width: 100%;
-} */
-    
-    /* On mouse-over */
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
     
@@ -157,4 +136,114 @@ section{
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+#content{
+    background-color: white;
+    min-height: 520px;
+    overflow: scroll;
+    width: 96%;
+	margin-left: 1%;
+    height: 0px;
+    text-align: left;
+    padding: 5px;
+    border: 5px solid #ffffff;
+    border-radius:10px;
+}
+
+.tujuan {
+    width:95%;
+    min-height:10px;
+    border: 5px groove #90B77D; 
+    border-radius:10px;
+    margin:0 10px 0 10px;
+    background-color:#e3fcd7;
+    display:block!important;
+    padding:10px 0 0 10px;
+}
+
+.hilang{
+    display:none!important
+}
+        
+.tujuan li{
+    margin-left:35px;
+    margin-top:10px;
+    margin-right:25px;
+    margin-bottom:10px
+}
+
+.kliktujuan{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width:fit-content
+}
+    
+.kliktujuan a{
+    text-decoration:none;
+    color: white
+}
+
+.apersepsi {
+    width:95%;
+    /* min-height: 210px; */
+    background-color:#FFFFFF;
+    display:block!important;
+}
+                
+.lost{
+    display:none!important
+}
+                
+.apersepsi li{
+    margin-left:35px;
+    margin-top:10px;
+    margin-right:25px;
+    margin-bottom:10px
+}
+                
+.klikapersepsi{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width: fit-content
+}
+            
+.klikapersepsi a{
+    text-decoration:none;
+    color: white
+}
+
+.materi {      
+    min-height: fit-content;
+    width:97.5%;
+    text-align: justify;
+    margin:20px 10px 0 10px;
+}
+
+.isian{
+        
+    display:none;
+    overflow:auto;
+    text-align:justify
+}
+
+.isian li{margin:0% 2% 0% 4%}
+
+.isiAktif{display:block}
+
+.kliktts{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width:fit-content
+}
+
+.kliktts a{
+    text-decoration:none;
+    color: white
 }
