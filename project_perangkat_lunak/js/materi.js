@@ -18,6 +18,20 @@ function ftampil(){
 	}
 }
 
+// $(document).ready(function () {
+//   // biar nav bar tidak terdouble terbukanya
+//   $(".dropdown").click(function () {
+//       if ($(this).siblings(".menu-show").css("display") == "block") {
+//           $(this).siblings(".menu-show").css("display", "none");
+          
+//       } else {
+//           $('.menu-show').css("display", "none");
+//           $(this).siblings(".menu-show").css("display", "block");
+//       }
+//   });
+
+
+
 window.onscroll = function(){
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
 	  document.getElementById("js-top").style.display = "block";
