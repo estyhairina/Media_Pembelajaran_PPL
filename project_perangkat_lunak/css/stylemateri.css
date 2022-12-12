@@ -277,3 +277,22 @@ section{
     text-decoration:none;
     color: white
 }
+
+table{
+    text-align: center;
+}
+
+td {
+	width: 40px;
+	height: 40px;
+}
+
+td input {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.block {
