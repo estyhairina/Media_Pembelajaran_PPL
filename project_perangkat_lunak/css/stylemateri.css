@@ -275,6 +275,24 @@ section{
     
 }
 
+#kiri2{
+    width: 50%;
+	height: fit-content;
+    float:left;
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 10px;
+}
+
+#kanan2{
+    width: 50%;
+	height: fit-content;
+    float: right;
+    text-align: justify;
+    
+   
+}
+
 .isian{
         
     display:none;

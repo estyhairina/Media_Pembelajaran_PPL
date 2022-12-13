@@ -1,4 +1,4 @@
-const btn = document.querySelectorAll("body button");
+const btn = document.querySelectorAll("button");
 
 btn.forEach(function (pil) {
     pil.addEventListener('click', function () {
@@ -73,6 +73,7 @@ function submitString(concat, tipe, tabel) {
     } else if (concat.toUpperCase() == "megaspora" && tipe == "d6") {
         pengulanganTabel(tabel);
     }
+}
 
 
 function pengulanganTabel(table) {
