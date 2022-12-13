@@ -60,24 +60,19 @@ function catString(cn) {
 }
 
 function submitString(concat, tipe, tabel) {
-    if (concat.toUpperCase() == "testis" && tipe == "d1") {
+    if (concat.toUpperCase() == "ovarium" && tipe == "m1") {
         pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "megaspora" && tipe == "m1") {
+    } else if (concat.toUpperCase() == "oogonium" && tipe == "d2") {
         pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "mikrosporogenesis" && tipe == "m2") {
+    } else if (concat.toUpperCase() == "oogenesis" && tipe == "m3") {
         pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "spermatogonium" && tipe == "d4") {
+    } else if (concat.toUpperCase() == "gametogenesis" && tipe == "d4") {
         pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "oogenesis" && tipe == "d6") {
+    } else if (concat.toUpperCase() == "testis" && tipe == "d5") {
         pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "oogonium" && tipe == "d7") {
+    } else if (concat.toUpperCase() == "megaspora" && tipe == "d6") {
         pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "megasprogenesis" && tipe == "d8") {
-        pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "gametogenesis" && tipe == "d9") {
-        pengulanganTabel(tabel);
-    } else if (concat.toUpperCase() == "ovarium" && tipe == "m5") {
-        pengulanganTabel(tabel);
+    }
 
 
 function pengulanganTabel(table) {
