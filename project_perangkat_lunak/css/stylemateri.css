@@ -22,7 +22,7 @@ body {
 .sidebar {
     position: fixed;
     left: 0px;
-    width: 280px;
+    width: 300px;
     height: 100%;
     background: #90B77D;
     transition: all .5s ease;
@@ -33,12 +33,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: red;
+    background: rgb(97, 94, 94);
 }
 
 .scrollbox {
     overflow: auto;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .scrollbox-inner, .scrollbox:hover {
@@ -114,7 +114,7 @@ label #btn{
 
 label #cancel{
     z-index: 1111;
-    left: 230px;
+    left: 250px;
     top: 10px;
     font-size: 30px;
     color: #FFFFFF;
@@ -123,7 +123,7 @@ label #cancel{
 }
 
 #check:checked ~ .sidebar{
-    left: -280px;
+    left: -300px;
 }
 
 #check:checked ~ label #btn{
@@ -133,7 +133,7 @@ label #cancel{
 }
 
 #check:checked ~ label #cancel{
-    left: -195px;
+    left: -200px;
 }
 
 #check:checked ~ section{
@@ -146,7 +146,7 @@ section{
     background-size: cover;
     height: 100vh;
     transition: all .5s;
-    margin-left: 280px;
+    margin-left: 300px;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -250,9 +250,9 @@ section{
 
 .materi {      
     min-height: fit-content;
-    width:97.5%;
+    width:100%;
     text-align: justify;
-    margin:20px 10px 0 10px;
+    margin:10px 10px 0 10px;
 }
 
 .isian{
