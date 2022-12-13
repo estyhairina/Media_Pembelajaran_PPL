@@ -29,13 +29,17 @@ body {
 }
 
 ::-webkit-scrollbar{
-    width: 0px;
+    width: 10px;
 }
 
-/* .scrollbox {
+::-webkit-scrollbar-thumb{
+    background: red;
+}
+
+.scrollbox {
     overflow: auto;
-    visibility: hidden;
-} */
+    /* visibility: hidden; */
+}
 
 .scrollbox-inner, .scrollbox:hover {
     visibility: visible;
