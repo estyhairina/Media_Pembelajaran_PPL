@@ -218,7 +218,7 @@ section{
 }
 
 .apersepsi {
-    width:95%;
+    width:100%;
     /* min-height: 210px; */
     background-color:#FFFFFF;
     display:block!important;
@@ -250,9 +250,9 @@ section{
 
 .materi {      
     min-height: fit-content;
-    width:100%;
+    width:98%;
     text-align: justify;
-    margin:10px 10px 0 10px;
+    margin:10px 10px 10px 10px;
 }
 
 .isian{
@@ -262,7 +262,7 @@ section{
     text-align:justify
 }
 
-.isian li{margin:0% 2% 0% 4%}
+.isian li{margin:0% 2% 0% 2%}
 
 .isiAktif{display:block}
 
