@@ -28,6 +28,25 @@ body {
     transition: all .5s ease;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* .scrollbox {
+    overflow: auto;
+    visibility: hidden;
+} */
+
+.scrollbox-inner, .scrollbox:hover {
+    visibility: visible;
+}
+
+.scrollbox-inner ul{
+    overflow: auto;
+    height: 600px;
+    width: 100%;
+}
+
 .sidebar header {
     font-size: 22px;
     color: white;
@@ -91,7 +110,7 @@ label #btn{
 
 label #cancel{
     z-index: 1111;
-    left: 225px;
+    left: 230px;
     top: 10px;
     font-size: 30px;
     color: #FFFFFF;
