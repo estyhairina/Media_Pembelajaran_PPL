@@ -11,10 +11,10 @@ const questions = [
 
     {
         question: "Sebuah sel yang terdapat di testis memiliki jumish kromosom setengah dan jumlah kromosom (n) sel induknya dan masing-masing kromosom terdiri atas empat lengan. Sel tersebut adalah . . . . ",
-        optionA: "spermatid",
-        optionB: "spermatosit",
-        optionC: "spermatozoa",
-        optionD: "spermatosit sekunder",
+        optionA: "Spermatid",
+        optionB: "Spermatosit",
+        optionC: "Spermatozoa",
+        optionD: "Spermatosit sekunder",
         correctOption: "optionD"
     },
 
@@ -38,10 +38,10 @@ const questions = [
 
     {
         question: "Pada proses spermatogenesis, sel yang bersifat diploid adalah. . . . . ",
-        optionA: "spermatogonium dan spermatid",
-        optionB: "spermatosit primer dan spermatid",
-        optionC: "spermatogonium dan spermatosit primer",
-        optionD: "spermatosit sekunder dan spermatid",
+        optionA: "Spermatogonium dan spermatid",
+        optionB: "Spermatosit primer dan spermatid",
+        optionC: "Spermatogonium dan spermatosit primer",
+        optionD: "Spermatosit sekunder dan spermatid",
         correctOption: "optionC"
     },
 
@@ -56,10 +56,10 @@ const questions = [
 
     {
         question: "Meiosis pada tumbuhan lumut dan tumbuhan paku terjadi pada. . . . .",
-        optionA: "pembentukan zigot",
-        optionB: "pembentukan daun",
-        optionC: "pembentukan spora",
-        optionD: "pembentukan gamet",
+        optionA: "Pembentukan zigot",
+        optionB: "Pembentukan daun",
+        optionC: "Pembentukan spora",
+        optionD: "Pembentukan gamet",
         correctOption: "optionD"
     },
 
@@ -67,28 +67,28 @@ const questions = [
 
     {
         question: "Meiosis pada tumbuhan lumut dan tumbuhan paku terjadi pada. . . . .",
-        optionA: "pembentukan zigot",
-        optionB: "pembentukan daun",
-        optionC: "pembentukan spora",
-        optionD: "pembentukan gamet",
+        optionA: "Pembentukan zigot",
+        optionB: "Pembentukan daun",
+        optionC: "Pembentukan spora",
+        optionD: "Pembentukan gamet",
         correctOption: "optionD"
     },
 
     {
         question: "Meiosis pada tumbuhan lumut dan tumbuhan paku terjadi pada. . . . .",
-        optionA: "pembentukan zigot",
-        optionB: "pembentukan daun",
-        optionC: "pembentukan spora",
-        optionD: "pembentukan gamet",
+        optionA: "Pembentukan zigot",
+        optionB: "Pembentukan daun",
+        optionC: "Pembentukan spora",
+        optionD: "Pembentukan gamet",
         correctOption: "optionD"
     },
 
     {
         question: "Meiosis pada tumbuhan lumut dan tumbuhan paku terjadi pada. . . . .",
-        optionA: "pembentukan zigot",
-        optionB: "pembentukan daun",
-        optionC: "pembentukan spora",
-        optionD: "pembentukan gamet",
+        optionA: "Pembentukan zigot",
+        optionB: "Pembentukan daun",
+        optionC: "Pembentukan spora",
+        optionD: "Pembentukan gamet",
         correctOption: "optionD"
     }
 ]

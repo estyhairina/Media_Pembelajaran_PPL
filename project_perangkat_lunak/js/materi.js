@@ -1,15 +1,17 @@
-function dafis(){
-  let dafis = document.getElementById("dafis");
-  let main = document.getElementById("main");
-
-  if (dafis.className.indexOf("dafis-hilang") == -1){
-    dafis.className += "dafis-hilang";
-    main.className = main.className.replace("main","main-penuh");
-  } else{
-    dafis.className = dafis.className.replace("dafis-hilang","");
-    main.className = main.className.replace("main-penuh","main");
+function bukaIsi(evt, nmrIsi) {
+  var i, isian, pilihan;
+  isian = document.getElementsByClassName("isian");
+  for (i = 0; i < isian.length; i++) {
+    isian[i].style.display = "none";
   }
+  pilihan = document.getElementsByClassName("pilihan");
+  for (i = 0; i < pilihan.length; i++) {
+    pilihan[i].className = pilihan[i].className.replace(" tmblAktif", "");
+  }
+  document.getElementById(nmrIsi).style.display = "block";
+  evt.currentTarget.className += " tmblAktif";
 }
+
 
 function ftampil(){
 	/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
