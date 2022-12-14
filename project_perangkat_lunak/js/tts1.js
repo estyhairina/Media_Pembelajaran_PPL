@@ -1,4 +1,4 @@
-const btn = document.querySelectorAll("button");
+const btn = document.querySelectorAll("body button");
 
 btn.forEach(function (pil) {
     pil.addEventListener('click', function () {
