@@ -11,6 +11,17 @@ body
     margin-left: 50px;
 }
 
+.imgheader{
+    width: 83%;
+    height: 40%;
+}
+
+.imghome{
+    width : 100px; 
+    height : 60px;
+    margin-left: 140px; 
+    margin-bottom: -20px;
+}
 
 #nav{
     width		: 100%;
