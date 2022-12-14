@@ -33,7 +33,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: rgb(97, 94, 94);
+    background: rgb(138, 138, 138);
 }
 
 .scrollbox {
@@ -41,7 +41,8 @@ body {
     visibility: hidden;
 }
 
-.scrollbox-inner, .scrollbox:hover {
+.scrollbox-inner, 
+.scrollbox:hover {
     visibility: visible;
 }
 
@@ -293,7 +294,25 @@ section{
    
 }
 
-.isian{
+.nav a{
+    display: inline-block;
+    padding: 10px 13px;
+    font-size: 18px;
+}
+
+.tombol{
+    
+    background-color: white;
+    
+    border-radius: 5px;
+    color: #42855B;
+    
+    margin: 10px 0 0 0;
+    padding: 1px 5px 1px 5px;
+
+}
+
+/* .isian{
         
     display:none;
     overflow:auto;
@@ -336,4 +355,4 @@ td input {
 
 .block {
         background-color: #90B77D;
-}
+} */
