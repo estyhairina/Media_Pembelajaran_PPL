@@ -190,12 +190,12 @@ section{
     border-radius:10px;
     margin:0 10px 0 10px;
     background-color:#e3fcd7;
-    display:block!important;
+    display:block;
     padding:10px 0 0 10px;
 }
 
 .hilang{
-    display:none!important
+    display:none;
 }
         
 .tujuan li{
@@ -220,13 +220,12 @@ section{
 
 .apersepsi {
     width:100%;
-    /* min-height: 210px; */
     background-color:#FFFFFF;
-    display:block!important;
+    display:block;
 }
                 
 .lost{
-    display:none!important
+    display:none;
 }
                 
 .apersepsi li{
@@ -245,6 +244,26 @@ section{
 }
             
 .klikapersepsi a{
+    text-decoration:none;
+    color: white
+}
+
+.latihan{
+    margin-left:35px;
+    margin-top:10px;
+    margin-right:25px;
+    margin-bottom:10px
+}
+
+.kliklatihan{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width:fit-content
+}
+    
+.kliklatihan a{
     text-decoration:none;
     color: white
 }

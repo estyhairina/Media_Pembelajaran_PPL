@@ -33,20 +33,6 @@ function ftampil(){
 	}
 }
 
-// $(document).ready(function () {
-//   // biar nav bar tidak terdouble terbukanya
-//   $(".dropdown").click(function () {
-//       if ($(this).siblings(".menu-show").css("display") == "block") {
-//           $(this).siblings(".menu-show").css("display", "none");
-          
-//       } else {
-//           $('.menu-show').css("display", "none");
-//           $(this).siblings(".menu-show").css("display", "block");
-//       }
-//   });
-
-
-
 window.onscroll = function(){
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
 	  document.getElementById("js-top").style.display = "block";
@@ -75,8 +61,8 @@ function apersepsi(apersepsi) {
     }
   }
 
-  function tts(tts) {
-    var x = document.getElementById(tts);
+  function latihan(latihan) {
+    var x = document.getElementById(latihan);
   
     if (x.className.indexOf("lost") == -1) {
       x.className += " lost";
