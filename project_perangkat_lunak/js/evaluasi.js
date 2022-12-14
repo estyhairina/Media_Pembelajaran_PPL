@@ -66,29 +66,29 @@ const questions = [
 
 
     {
-        question: "Meiosis pada tumbuhan lumut dan tumbuhan paku terjadi pada. . . . .",
-        optionA: "Pembentukan zigot",
-        optionB: "Pembentukan daun",
-        optionC: "Pembentukan spora",
-        optionD: "Pembentukan gamet",
-        correctOption: "optionD"
+        question: "Perbedaan antara spermatogenesis dengan oogenesis terletak pada . . . . .",
+        optionA: "Tahap-tahap pembelahan",
+        optionB: "Jumlah sel kelamin yang fungsional",
+        optionC: "Jumlah kromosom pada sperma dan ovum",
+        optionD: "Jaringan tempat terjadinya proses pola pemisahan kromosom pada tiap fase",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Setelah oogonium membelah secara mitosis berkali-kali akan menghasilkan ...............setelah itu baru membelah secara meiosis",
+        optionA: "oosit sekunder diploid",
+        optionB: "oosit primer diploid",
+        optionC: "polosit sekunder",
+        optionD: "polosit primer",
+        correctOption: "optionB"
     },
 
     {
         question: "Meiosis pada tumbuhan lumut dan tumbuhan paku terjadi pada. . . . .",
-        optionA: "Pembentukan zigot",
-        optionB: "Pembentukan daun",
-        optionC: "Pembentukan spora",
-        optionD: "Pembentukan gamet",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Meiosis pada tumbuhan lumut dan tumbuhan paku terjadi pada. . . . .",
-        optionA: "Pembentukan zigot",
-        optionB: "Pembentukan daun",
-        optionC: "Pembentukan spora",
-        optionD: "Pembentukan gamet",
+        optionA: "2 mikrospora haploid",
+        optionB: "4 mikrospora diploid",
+        optionC: "2 mikrospora diploid",
+        optionD: "4 mikrospora haploid",
         correctOption: "optionD"
     }
 ]

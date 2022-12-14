@@ -11,16 +11,13 @@ body
     margin-left: 50px;
 }
 
-.imgheader{
-    width: 83%;
-    height: 40%;
-}
-
-.imghome{
-    width : 100px; 
-    height : 60px;
-    margin-left: 140px; 
-    margin-bottom: -20px;
+#menu-home{
+    position: absolute;
+    overflow: hidden;
+    top: 15px;
+    right: 30px;
+    display: inline-flex;
+    padding-right: 35px;
 }
 
 #nav{
@@ -44,12 +41,6 @@ body
     margin-top	: 50px;
     border		: 10px solid #42855B;
     overflow: auto;
-}
-
-img{
-    margin-left: 140px; 
-    margin-bottom: -20px;
-    display: block;
 }
 
 .tabel1{

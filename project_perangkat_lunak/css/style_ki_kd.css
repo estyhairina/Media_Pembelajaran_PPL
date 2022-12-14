@@ -10,16 +10,13 @@ text-align: center;
 margin-left: 50px;
 }
 
-.imgheader{
-    width: 83%;
-    height: 40%;
-}
-
-.imghome{
-width : 100px; 
-height : 60px;
-margin-left: 140px; 
-margin-bottom: -20px;
+#menu-home{
+    position: absolute;
+    overflow: hidden;
+    top: 15px;
+    right: 30px;
+    display: inline-flex;
+    padding-right: 35px;
 }
 
 #nav{
@@ -37,7 +34,7 @@ margin-bottom: -20px;
     background	: rgba(255, 255, 255, 0.7);
     float		: center;
     width		: 90%;
-    height		: 500px;
+    height		: 450px;
     font-size	: 1em;
     text-align	: justify;
     margin-top	: 50px;
