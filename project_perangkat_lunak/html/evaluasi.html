@@ -4,289 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/project_perangkat_lunak/css/stylemateri.css">
+    <link rel="stylesheet" href="/project_perangkat_lunak/css/evaluasi.css">
     <link rel="stylesheet" href="/project_perangkat_lunak/fontawesome/css/all.css" class="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
-    <script src="/project_perangkat_lunak/js/materi.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <section>
-        <div id="header">
-        </div>
-        
-    <div class="container">
-        <div class="row">
-            <div class="col align-self-center">
-                <h4>Mendatar</h4>
-                <div class="d-flex flex-row align-items-baseline">
-                    <div class="pr-2">
-                        <p>2. Proses produksi dimulai dari sel primordial diploid</p>
-                    </div>
-                    <div class="pr-2"><button type="button" name="d1"
-                            class="btn btn-primary btn-sm align-self-center">PILIH</button>
-                    </div>
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+          
+            <div class="modal-content-container">
+              
+                <h1>EVALUASI SELESAI</h1>
+              
+                <div class="grade-details">
+                    <p>Pertanyaan : 10</p>
+                    <p>Jawaban Salah : <span id="wrong-answers"></span></p>
+                    <p>Jawaban Benar : <span id="right-answers"></span></p>
+                    <p>Nilai Anda : <span id="grade-percentage"></span></p>
+                    <p ><span id="remarks"></span></p>
                 </div>
-                <div class="d-flex flex-row align-items-baseline">
-                    <div class="pr-2">
-                        <p>4. Proses pembentukan gamet</p>
-                    </div>
-                    <div class="pr-2"><button type="button" name="d2"
-                            class="btn btn-primary btn-sm align-self-center">PILIH</button>
-                    </div>
-                </div>
-                <div class="d-flex flex-row align-items-baseline">
-                    <div class="pr-2">
-                        <p>5. Tempat terjadinya pembentukan spermatozoa</p>
-                    </div>
-                    <div class="pr-2"><button type="button" name="d3"
-                            class="btn btn-primary btn-sm align-self-center">PILIH</button>
-                    </div>
-                </div>
-                <div class="d-flex flex-row align-items-baseline">
-                    <div class="pr-2">
-                        <p>6. Megasprogenesis terjadi di dalam bakal buah atau ovarium menghasilkan</p>
-                    </div>
-                    <div class="pr-2"><button type="button" name="d4"
-                            class="btn btn-primary btn-sm align-self-center">PILIH</button>
-                    </div>
-                </div>
-
-                <h4>Menurun</h4>
-                <div class="d-flex flex-row align-items-baseline">
-                    <div class="pr-2">
-                        <p>1. Proses meiosis pada betina </p>
-                    </div>
-                    <div class="pr-2"><button type="button" name="d1"
-                            class="btn btn-primary btn-sm align-self-center">PILIH</button>
-                    </div>
-                </div>
-                <div class="d-flex flex-row align-items-baseline">
-                    <div class="pr-2">
-                        <p>3. Proses pembentukan ovum</p>
-                    </div>
-                    <div class="pr-2"><button type="button" name="d2"
-                            class="btn btn-primary btn-sm align-self-center">PILIH</button>
-                    </div>
+              
+                <div class="modal-button-container">
+                    <button>
+                    <a href="materi.html" style="text-decoration: none; color: white;">Kembali ke Materi</a>
+                </button>
                 </div>
               
             </div>
-            <div class="col">
-                <table class=" tabel">
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="d4" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m1" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="d4" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m1 d6" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                       
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                    </tr>
-
-                    <tr>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"><input class="m2" type="text" maxlength="1"></td>
-                        <td class="block"></td>
-                        <td class="block"></td>
-                       
-                    </tr>
-                    </tr>
-                </table>
-            </div>
         </div>
-    </div>
-    </section>
 
+        <div class="game-quiz-container">
+          
+            <div class="game-details-container">
+                <h1>Skor : <span id="player-score"></span> / 10</h1>
+                <h1>Pertanyaan : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+              
+               <div class="modal-container" id="option-modal">
+                 
+                    <div class="modal-content-container">
+                         <h1>Silahkan Pilih Opsi</h1>
+                      
+                         <div class="modal-button-container">
+                             <button>
+                            <a href="materi.html" style="text-decoration: none;">Kembali ke Materi</a>
+                            </button>
+                        </div>
+                      
+                    </div>
+                 
+               </div>
+              
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Selanjutnya</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="/project_perangkat_lunak/js/evaluasi.js"></script>
 </body>
 </html>
