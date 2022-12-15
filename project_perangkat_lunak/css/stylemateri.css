@@ -172,7 +172,7 @@ section{
 
 #content{
     background-color: white;
-    min-height: 470px;
+    min-height: 480px;
     overflow: scroll;
     width: 96%;
 	margin-left: 1%;
@@ -272,7 +272,7 @@ section{
     min-height: fit-content;
     width:97%;
     text-align: justify;
-    margin:10px 10px 10px 10px;
+    margin:10px 0 0 10px;
 }
 
 #kiri{
