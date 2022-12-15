@@ -172,7 +172,7 @@ section{
 
 #content{
     background-color: white;
-    min-height: 480px;
+    min-height: 520px;
     overflow: scroll;
     width: 96%;
 	margin-left: 1%;
@@ -339,25 +339,6 @@ section{
     display:block;
     padding:10px 10px 10px 10px;
 }
-
-.pilih .tmblAktif{
-    background-color:#a8c2fb;
-    color:#000}
-    
-.pilihan{
-    width:270px;
-   
-}
-    
-.isian{
-        
-    display:none;
-    overflow:auto;
-    text-align:justify}
-
-.isian li{margin:0% 2% 0% 4%}
-
-.isiAktif{display:block}
 
 /* 
 
