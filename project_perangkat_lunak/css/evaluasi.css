@@ -87,7 +87,7 @@ main{
     border: 2px solid darkgray;
     border-radius: 5px;
     overflow: hidden;
-    padding: 5px 0 0 5px;
+    margin: 5px 0 0 5px;
 }
 span label{
     width: 100%;
