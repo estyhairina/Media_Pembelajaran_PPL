@@ -63,8 +63,6 @@ const questions = [
         correctOption: "optionD"
     },
 
-
-
     {
         question: "Perbedaan antara spermatogenesis dengan oogenesis terletak pada . . . . .",
         optionA: "Tahap-tahap pembelahan",
